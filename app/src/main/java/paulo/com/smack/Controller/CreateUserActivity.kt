@@ -1,10 +1,11 @@
-package paulo.com.smack
+package paulo.com.smack.Controller
 
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_create_user.*
+import paulo.com.smack.R
 import java.util.*
 
 class CreateUserActivity : AppCompatActivity() {
