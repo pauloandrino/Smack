@@ -1,15 +1,14 @@
-package paulo.com.smack
+package paulo.com.smack.Controller
 
+import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
+import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
+import paulo.com.smack.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,7 +18,9 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         val toggle = ActionBarDrawerToggle(
-            this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
+            this, drawer_layout, toolbar,
+            R.string.navigation_drawer_open,
+            R.string.navigation_drawer_close
         )
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
@@ -32,6 +33,19 @@ class MainActivity : AppCompatActivity() {
         } else {
             super.onBackPressed()
         }
+    }
+
+    fun loginBtnNavClicked(view: View) {
+        val loginItent = Intent(this, LoginActivity::class.java)
+        startActivity(loginItent)
+    }
+
+    fun addChannelClicked(view: View) {
+
+    }
+
+    fun sendMsgBtnClicked(view: View) {
+
     }
 
 }
