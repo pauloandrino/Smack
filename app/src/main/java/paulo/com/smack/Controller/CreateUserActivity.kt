@@ -2,15 +2,14 @@ package paulo.com.smack.Controller
 
 import android.content.Intent
 import android.graphics.Color
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.content.LocalBroadcastManager
+import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_create_user.*
 import paulo.com.smack.R
 import paulo.com.smack.Services.AuthService
-import paulo.com.smack.Services.UserDataService
 import paulo.com.smack.Utilities.BROADCAST_USER_DATA_CHANGE
 import java.util.*
 
