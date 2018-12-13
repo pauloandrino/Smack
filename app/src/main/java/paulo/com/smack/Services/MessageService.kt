@@ -8,11 +8,13 @@ import com.android.volley.toolbox.Volley
 import org.json.JSONException
 import paulo.com.smack.Controller.App
 import paulo.com.smack.Model.Channel
+import paulo.com.smack.Model.Message
 import paulo.com.smack.Utilities.URL_GET_CHANNELS
 
 object MessageService {
 
     val channels = ArrayList<Channel>()
+    val messages = ArrayList<Message>()
 
     fun getChannels(complete: (Boolean) -> Unit) {
 
